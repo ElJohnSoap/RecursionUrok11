@@ -20,4 +20,3 @@ int main()
 	return 0;
 }
 
-//return A * Power(A, N - 1);
