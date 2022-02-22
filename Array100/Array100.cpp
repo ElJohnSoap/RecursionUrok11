@@ -9,22 +9,22 @@ using namespace std;
 
 int min10Arr(int arr[100], int n = 0)
 {
-    
-    int sum10_1 = 0;
-
+    if (100 - n == 11)
+    {
+        return n;
+    }
+    int sum10_1 = 0, sum10_2 = 0;
+    int p = min10Arr(arr, n + 1);
     for (int i = n; i <= n + 10; i++)
         sum10_1 += arr[i];
     for (int i = p; i <= p + 10; i++)
         sum10_2 += arr[i];
-
-    if (n == 89) return p;
-    else {
-        int sum10_2 = min10Arr(arr, n + 1);
-        if (sum10_1 <= sum10_2) {
-            return sum10_1;
-        }
-        else return sum10_2;
+    if (sum10_1 < sum10_2)
+    {
+        p = n;
+        return p;
     }
+    return p;    
 }
 
 int main()
@@ -32,9 +32,12 @@ int main()
     srand(time(NULL));
     const int size = 100;
     int arr[size];
-    for (int i = 0; i < size; i++) {
+    for (int i = 0; i < size; i++)
+    {
         arr[i] = rand() % 50;
         cout << arr[i] << "\t";
+        if ((i + 1) % 10 == 0)
+            cout << endl;
     }
     cout << min10Arr(arr);
     return 0;
