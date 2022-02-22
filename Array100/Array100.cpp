@@ -11,9 +11,13 @@ int min10Arr(int arr[100], int n = 0)
 {
     
     int sum10_1 = 0;
+
     for (int i = n; i <= n + 10; i++)
         sum10_1 += arr[i];
-    if (n == 89) return sum10_1;
+    for (int i = p; i <= p + 10; i++)
+        sum10_2 += arr[i];
+
+    if (n == 89) return p;
     else {
         int sum10_2 = min10Arr(arr, n + 1);
         if (sum10_1 <= sum10_2) {

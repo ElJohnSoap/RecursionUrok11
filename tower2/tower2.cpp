@@ -1,10 +1,12 @@
+Ôªø/*–•–∞–Ω–æ–π—Å–∫–∞—è –±–∞—à–Ω—è*/
+
 #include <iostream>
 using namespace std;
 
 
 void move1(char kernel1, char kernel2)
 {
-    cout << "»Á ÒÚÂÊÌˇ " << kernel1 << " Ì‡ ÒÚÂÊÂÌ¸ " << kernel2 << endl;
+    cout << "–ò–∑ —Å—Ç–µ—Ä–∂–Ω—è " << kernel1 << " –Ω–∞ —Å—Ç–µ—Ä–∂–µ–Ω—å " << kernel2 << endl;
 }
 
 void moveTower(int disk, char kernel1, char kernel2, char kernelTemp)
