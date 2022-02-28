@@ -9,7 +9,7 @@ using namespace std;
 
 int min10Arr(int arr[100], int n = 0)
 {
-    if (100 - n == 11)
+    if (n == 89)
     {
         return n;
     }
@@ -24,7 +24,7 @@ int min10Arr(int arr[100], int n = 0)
         p = n;
         return p;
     }
-    return p;    
+    return n;    
 }
 
 int main()
@@ -39,7 +39,28 @@ int main()
         if ((i + 1) % 10 == 0)
             cout << endl;
     }
+    cout << endl;
     cout << min10Arr(arr);
+    cout << endl;
+    cout << endl;
+
+    //проверка
+    int sum1 = 0, sum2 = 0, p;
+    for (int i = 0; i < 90; i++)
+    {
+        sum1 = 0;
+        for (int j = i; j < i + 10; j++)
+        {
+            sum1 += arr[j];            
+        }
+        if (sum1 < sum2 || i == 0)
+        {
+            sum2 = sum1;
+            p = i;
+        }
+        cout << sum1 << "\t"<< i << "\n";
+    }
+    cout << p << "\t" << sum2;
     return 0;
 }
 
@@ -78,4 +99,20 @@ int main() {
     cout << "Minimum position: " << p << endl << endl;
 
     system​(​"pause"​)​; ​
+}
+
+int min10(int a[100], bestIndex = 0, bestSum = 0, currentSum = 0, currentIndex = 0) {
+if (currentIndex == 100)
+return bestIndex;
+
+int newSum = currentSum + a[currentIndex];
+
+if (currentIndex < 10)
+return min10(a, bestIndex, newSum, newSum, currentIndex + 1);
+
+newSum = newSum - a[currentIndex - 10];
+if (newSum > bestSum)
+return min10(a, currentIndex - 10, newSum, newSum, currentIndex + 1);
+else
+return min10(a, bestIndex, bestSum, newSum, currentIndex + 1);
 }*/

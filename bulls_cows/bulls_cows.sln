@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bulls_cows", "bulls_cows.vcxproj", "{B43CF547-3429-44A5-985B-5A5B9CA04743}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Debug|x64.ActiveCfg = Debug|x64
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Debug|x64.Build.0 = Debug|x64
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Debug|x86.ActiveCfg = Debug|Win32
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Debug|x86.Build.0 = Debug|Win32
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Release|x64.ActiveCfg = Release|x64
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Release|x64.Build.0 = Release|x64
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Release|x86.ActiveCfg = Release|Win32
+		{B43CF547-3429-44A5-985B-5A5B9CA04743}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE0C79E7-F084-4FBA-9B12-8C4FD76FE239}
+	EndGlobalSection
+EndGlobal

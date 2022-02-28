@@ -1,0 +1,3 @@
+﻿  bulls_cows.cpp
+C:\Users\hloiv\source\repos\RecursionUrok11\bulls_cows\bulls_cows.cpp(94,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  bulls_cows.vcxproj -> C:\Users\hloiv\source\repos\RecursionUrok11\bulls_cows\x64\Debug\bulls_cows.exe
