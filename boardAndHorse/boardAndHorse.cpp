@@ -64,7 +64,10 @@ int main()
             board[i][j] = 0;
     }
 
-    setHorse(0, 0);
+    int a = 0, b = 0;
+    //cout << "¬ведите координаты начальной точки х - у;";
+    //cin >> a >> b;
+    setHorse(a, b);
 
     printBoard();
 
